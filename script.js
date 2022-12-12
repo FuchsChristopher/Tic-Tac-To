@@ -6,12 +6,12 @@ function fillShape(id) {
     if (!fields[id]) {
         if (currentShape == 'cross') {
             currentShape = 'circle';
-            document.getElementById('player1').classList.remove('playerInactive');
-            document.getElementById('player2').classList.add('playerInactive');
-        } else {
-            currentShape = 'cross';
             document.getElementById('player1').classList.add('playerInactive');
             document.getElementById('player2').classList.remove('playerInactive');
+        } else {
+            currentShape = 'cross';
+            document.getElementById('player1').classList.remove('playerInactive');
+            document.getElementById('player2').classList.add('playerInactive');
         }
 
         fields[id] = currentShape;
