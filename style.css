@@ -84,6 +84,9 @@ table tr td:last-child {
     width: 350px;
     position: absolute;
     top: 305px;
+    transform: scale(0.0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
 }
 
 .horizontalLine2 {
@@ -92,6 +95,9 @@ table tr td:last-child {
     width: 350px;
     position: absolute;
     top: 444px;
+    transform: scale(0.0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
 }
 .horizontalLine3 {
     height: 10px;
@@ -99,6 +105,9 @@ table tr td:last-child {
     width: 350px;
     position: absolute;
     top: 585px;
+    transform: scale(0.0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
 }
 
 .horizontalLine4 {
@@ -107,7 +116,10 @@ table tr td:last-child {
     width: 350px;
     position: absolute;
     top: 444px;
-    left: 359px;
+    left: 231px;
+    transform: scale(0.0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
 }
 
 .horizontalLine5 {
@@ -116,6 +128,9 @@ table tr td:last-child {
     width: 350px;
     position: absolute;
     top: 441px;
+    transform: scale(0.0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
 }
 
 .horizontalLine6 {
@@ -124,7 +139,10 @@ table tr td:last-child {
     width: 350px;
     position: absolute;
     top: 444px;
-    right: 362px
+    right: 235px;
+    transform: scale(0.0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
 }
 
 .horizontalLine7 {
@@ -133,6 +151,9 @@ table tr td:last-child {
     width: 450px;
     position: absolute;
     top: 441px;
+    transform: scale(0.0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
 }
 
 .horizontalLine8 {
@@ -141,16 +162,46 @@ table tr td:last-child {
     width: 450px;
     position: absolute;
     top: 441px;
+    transform: scale(0.0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
 }
 
 .spin-45deg1 {
-    transform: rotate(45deg);
+    transform: rotate(45deg) scale(0.0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
 }
 
 .spin-45deg2 {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) scale(0.0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
 }
 
 .makeVertical {
-    transform: rotate(90deg);
+    transform: rotate(90deg) scale(0.0);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
+}
+
+.gameOver {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+    animation: zoomIn 225ms ease-in-out;
+}
+
+@keyframes zoomIn {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to{
+        opacity: 1;
+        scale: (1);
+    }
 }
