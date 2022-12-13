@@ -77,3 +77,80 @@ table tr td:last-child {
 .d-none {
     display: none;
 }
+
+.horizontalLine1 {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    position: absolute;
+    top: 305px;
+}
+
+.horizontalLine2 {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    position: absolute;
+    top: 444px;
+}
+.horizontalLine3 {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    position: absolute;
+    top: 585px;
+}
+
+.horizontalLine4 {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    position: absolute;
+    top: 444px;
+    left: 359px;
+}
+
+.horizontalLine5 {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    position: absolute;
+    top: 441px;
+}
+
+.horizontalLine6 {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 350px;
+    position: absolute;
+    top: 444px;
+    right: 362px
+}
+
+.horizontalLine7 {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 450px;
+    position: absolute;
+    top: 441px;
+}
+
+.horizontalLine8 {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 450px;
+    position: absolute;
+    top: 441px;
+}
+
+.spin-45deg1 {
+    transform: rotate(45deg);
+}
+
+.spin-45deg2 {
+    transform: rotate(-45deg);
+}
+
+.makeVertical {
+    transform: rotate(90deg);
+}
