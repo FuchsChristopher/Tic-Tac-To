@@ -91,10 +91,8 @@ function reStart(id) {
     gameOver = false;
     fields = [];
     fillShape(id);
-
     document.getElementById('gameOver').classList.add('d-none');
     document.getElementById('reStart').classList.add('d-none');
-
     for (let i = 1; i < 9; i++) {
         reStartLine(i);
     }
