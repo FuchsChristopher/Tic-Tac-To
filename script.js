@@ -16,7 +16,6 @@ function fillShape(id) {
         }
 
         fields[id] = currentShape;
-        console.log(fields);
         draw();
         checkForWin();
     }
@@ -79,10 +78,38 @@ function checkForWin() {
     }
 
     if (winner) {
-        console.log('WINNER', winner);
         gameOver = true;
         setTimeout(function () {
             document.getElementById('gameOver').classList.remove('d-none');
+            document.getElementById('reStart').classList.remove('d-none');
         }, 1000);
     }
+}
+
+
+function reStart(id) {
+    gameOver = false;
+    fields = [];
+    fillShape(id);
+
+    document.getElementById('gameOver').classList.add('d-none');
+    document.getElementById('reStart').classList.add('d-none');
+
+    for (let i = 1; i < 9; i++) {
+        reStartLine(i);
+    }
+    for (let i = 0; i < 9; i++) {
+        document.getElementById('circle-' + i).classList.add('d-none');
+        document.getElementById('cross-' + i).classList.add('d-none');
+    }
+}
+
+
+function reStartLine(i) {
+    document.getElementById('line' + i).style.transform = 'scale(0)';
+    document.getElementById('line4').style.transform = 'rotate(90deg) scale(0)';
+    document.getElementById('line5').style.transform = 'rotate(90deg) scale(0)';
+    document.getElementById('line6').style.transform = 'rotate(90deg) scale(0)';
+    document.getElementById('line7').style.transform = 'rotate(45deg) scale(0)';
+    document.getElementById('line8').style.transform = 'rotate(-45deg) scale(0)';
 }

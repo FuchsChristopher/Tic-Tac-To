@@ -205,3 +205,21 @@ table tr td:last-child {
         scale: (1);
     }
 }
+
+.reStart {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: #1C0B7F;
+    z-index: 2;
+    width: 300px;
+    height: 100px;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    bottom: 60px;
+    border-radius: 25px;
+}
+
+.reStart:hover {
+    background-color: rgb(59, 40, 168);
+    cursor: pointer;
+}
