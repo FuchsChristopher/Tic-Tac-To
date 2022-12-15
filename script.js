@@ -3,6 +3,7 @@ let currentShape = 'cross';
 let gameOver = false;
 
 
+
 function fillShape(id) {
     if (!fields[id] && !gameOver) {
         if (currentShape == 'cross') {
@@ -18,6 +19,7 @@ function fillShape(id) {
         fields[id] = currentShape;
         draw();
         checkForWin();
+        checkForUndecided();
     }
 }
 
@@ -87,12 +89,42 @@ function checkForWin() {
 }
 
 
+function checkForUndecided(winner) {
+    if (fields[0] && fields[1] && fields[2] && fields[3] && fields[4] && fields[5] && fields[6] && fields[7] && fields[8] && !winner) {
+        document.getElementById('undecIded').classList.remove('d-none');
+        document.getElementById('reStartUndecided').classList.remove('d-none');
+
+        setTimeout(function () {
+            document.getElementById('gameOver').classList.add('d-none');
+            document.getElementById('reStart').classList.add('d-none');
+        }, 1000);
+        
+    }
+}
+
+
 function reStart(id) {
     gameOver = false;
     fields = [];
     fillShape(id);
     document.getElementById('gameOver').classList.add('d-none');
     document.getElementById('reStart').classList.add('d-none');
+    for (let i = 1; i < 9; i++) {
+        reStartLine(i);
+    }
+    for (let i = 0; i < 9; i++) {
+        document.getElementById('circle-' + i).classList.add('d-none');
+        document.getElementById('cross-' + i).classList.add('d-none');
+    }
+}
+
+
+function reStart2(id) {
+    gameOver = false;
+    fields = [];
+    fillShape(id);
+    document.getElementById('undecIded').classList.add('d-none');
+    document.getElementById('reStartUndecided').classList.add('d-none');
     for (let i = 1; i < 9; i++) {
         reStartLine(i);
     }
