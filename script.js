@@ -19,7 +19,6 @@ function fillShape(id) {
         fields[id] = currentShape;
         draw();
         checkForWin();
-        checkForUndecided();
     }
 }
 
@@ -79,27 +78,32 @@ function checkForWin() {
         document.getElementById('line8').style.transform = 'rotate(-45deg) scale(1)';
     }
 
+    if (fields[0] && fields[1] && fields[2] && fields[3] && fields[4] && fields[5] && fields[6] && fields[7] && fields[8] && !winner) {
+        checkForUndecided();
+    }
+
     if (winner) {
-        gameOver = true;
-        setTimeout(function () {
-            document.getElementById('gameOver').classList.remove('d-none');
-            document.getElementById('reStart').classList.remove('d-none');
-        }, 1000);
+        theWinner();
     }
 }
 
 
-function checkForUndecided(winner) {
-    if (fields[0] && fields[1] && fields[2] && fields[3] && fields[4] && fields[5] && fields[6] && fields[7] && fields[8] && !winner) {
+function theWinner(winner) {
+    gameOver = true;
+        setTimeout(function () {
+            document.getElementById('gameOver').classList.remove('d-none');
+            document.getElementById('reStart').classList.remove('d-none');
+        }, 1000);
+}
+
+
+function checkForUndecided() {
+    setTimeout(function () {
         document.getElementById('undecIded').classList.remove('d-none');
         document.getElementById('reStartUndecided').classList.remove('d-none');
-
-        setTimeout(function () {
-            document.getElementById('gameOver').classList.add('d-none');
-            document.getElementById('reStart').classList.add('d-none');
-        }, 1000);
-        
-    }
+        document.getElementById('undecidedImg').classList.remove('d-none');
+        document.getElementById('undecidedText').classList.remove('d-none');
+    }, 1000);
 }
 
 
@@ -119,12 +123,14 @@ function reStart(id) {
 }
 
 
-function reStart2(id) {
+function restartUndecided(id) {
     gameOver = false;
     fields = [];
     fillShape(id);
     document.getElementById('undecIded').classList.add('d-none');
     document.getElementById('reStartUndecided').classList.add('d-none');
+    document.getElementById('undecidedImg').classList.add('d-none');
+    document.getElementById('undecidedText').classList.add('d-none');
     for (let i = 1; i < 9; i++) {
         reStartLine(i);
     }
