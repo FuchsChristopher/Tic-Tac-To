@@ -81,9 +81,10 @@ table tr td:last-child {
 .horizontalLine1 {
     height: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 350px;
+    width: 390px;
     position: absolute;
-    top: 305px;
+    top: 152px;
+    left: 10px;
     transform: scale(0.0);
     transition: transform 225ms ease-in-out;
     z-index: 1;
@@ -92,9 +93,10 @@ table tr td:last-child {
 .horizontalLine2 {
     height: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 350px;
+    width: 390px;
     position: absolute;
-    top: 444px;
+    top: 293px;
+    left: 10px;
     transform: scale(0.0);
     transition: transform 225ms ease-in-out;
     z-index: 1;
@@ -103,9 +105,10 @@ table tr td:last-child {
 .horizontalLine3 {
     height: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 350px;
+    width: 390px;
     position: absolute;
-    top: 585px;
+    top: 433px;
+    left: 10px;
     transform: scale(0.0);
     transition: transform 225ms ease-in-out;
     z-index: 1;
@@ -114,10 +117,10 @@ table tr td:last-child {
 .horizontalLine4 {
     height: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 350px;
+    width: 390px;
     position: absolute;
-    top: 444px;
-    left: 231px;
+    top: 293px;
+    right: 166px;
     transform: scale(0.0);
     transition: transform 225ms ease-in-out;
     z-index: 1;
@@ -126,9 +129,10 @@ table tr td:last-child {
 .horizontalLine5 {
     height: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 350px;
+    width: 390px;
     position: absolute;
-    top: 441px;
+    top: 293px;
+    left: 11px;
     transform: scale(0.0);
     transition: transform 225ms ease-in-out;
     z-index: 1;
@@ -137,10 +141,10 @@ table tr td:last-child {
 .horizontalLine6 {
     height: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 350px;
+    width: 390px;
     position: absolute;
-    top: 444px;
-    right: 235px;
+    top: 293px;
+    left: 150px;
     transform: scale(0.0);
     transition: transform 225ms ease-in-out;
     z-index: 1;
@@ -149,9 +153,10 @@ table tr td:last-child {
 .horizontalLine7 {
     height: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 450px;
+    width: 506px;
     position: absolute;
-    top: 441px;
+    top: 293px;
+    left: -48px;
     transform: scale(0.0);
     transition: transform 225ms ease-in-out;
     z-index: 1;
@@ -160,9 +165,10 @@ table tr td:last-child {
 .horizontalLine8 {
     height: 10px;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 450px;
+    width: 504px;
     position: absolute;
-    top: 441px;
+    top: 294px;
+    right: -30px;
     transform: scale(0.0);
     transition: transform 225ms ease-in-out;
     z-index: 1;
@@ -256,4 +262,16 @@ table tr td:last-child {
     z-index: 1;
     font-size: 60px;
     margin-top: -60px;
+}
+
+.mainDiv {
+    position: relative;
+}
+
+@media (max-width:376px) {
+    .horizontalLine8 {
+        width: 449px;
+        top: 316px;
+        right: -41px;
+    }
 }
