@@ -268,10 +268,174 @@ table tr td:last-child {
     position: relative;
 }
 
+@media (max-width:415px) {
+    .horizontalLine8 {
+        width: 418px;
+        top: 312px;
+        right: -6px;
+    }
+
+    .horizontalLine7 {
+        width: 449px;
+        top: 297px;
+        left: -28px;
+    }
+
+    .horizontalLine4 {
+        width: 390px;
+        top: 308px;
+        right: 137px;
+    }
+
+    .horizontalLine5 {
+        width: 390px;
+        top: 306px;
+        left: 6px;
+    }
+
+    .horizontalLine6 {
+        width: 390px;
+        top: 308px;
+        left: 140px;
+    }
+
+    .horizontalLine1 {
+        width: 390px;
+        top: 169px;
+        left: 4px;
+    }
+
+    .horizontalLine2 {
+        width: 390px;
+        top: 308px;
+        left: 6px;
+    }
+
+    .horizontalLine3 {
+        width: 390px;
+        top: 448px;
+        left: 5px;
+    }
+}
+
+@media (max-width:394px) {
+    .horizontalLine1 {
+        width: 375px;
+        left: 3px;
+    }
+
+    .horizontalLine2 {
+        width: 375px;
+        left: 3px;
+    }
+
+    .horizontalLine3 {
+        width: 375px;
+        left: 3px;
+    }
+
+    .horizontalLine4 {
+        right: 118px;
+    }
+
+    .horizontalLine5 {
+        left: 0px;
+    }
+
+    .horizontalLine6 {
+        left: 127px;
+    }
+}
+
+@media (max-width:391px) {
+    .horizontalLine1 {
+        width: 373px;
+        left: 2px;
+    }
+
+    .horizontalLine2 {
+        width: 373px;
+        left: 2px;
+    }
+
+    .horizontalLine3 {
+        width: 373px;
+        left: 2px;
+    }
+
+    .horizontalLine6 {
+        left: 127px;
+    }
+
+    .horizontalLine4 {
+        right: 118px;
+    }
+
+    .horizontalLine5 {
+        left: 0px;
+    }
+}
+
 @media (max-width:376px) {
     .horizontalLine8 {
         width: 449px;
-        top: 316px;
+        top: 305px;
         right: -41px;
+    }
+
+    .horizontalLine7 {
+        width: 490px;
+        top: 299px;
+        left: -53px;
+    }
+
+    .horizontalLine1 {
+        width: 349px;
+        top: 167px;
+        left: 19px;
+    }
+
+    .horizontalLine2 {
+        width: 349px;
+        top: 308px;
+        left: 19px;
+    }
+
+    .horizontalLine3 {
+        width: 349px;
+        top: 448px;
+        left: 19px;
+    }
+
+    .horizontalLine4 {
+        width: 390px;
+        top: 310px;
+        right: 118px;
+    }
+
+    .horizontalLine5 {
+        width: 390px;
+        top: 305px;
+        left: 0px;
+    }
+
+    .horizontalLine6 {
+        width: 390px;
+        top: 305px;
+        left: 127px;
+    }
+}
+
+@media (max-width:281px) {
+    .mainDiv {
+        width: 40vh;
+    }
+
+    .shape {
+        width: 50px;
+    }
+
+    .playerPanel {
+        flex-direction: column;
     }
 }
