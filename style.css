@@ -444,11 +444,15 @@ table tr td:last-child {
 }
 
 @media (max-width:376px) {
+    .undecidedText {
+        margin-top: -75px;
+    }
     .undecidedImg {
+        height: 57vh;
         object-fit: cover;
     }
     .gameOver {
-        height: 34vh;
+        height: 42vh;
         object-fit: cover;
     }
 
