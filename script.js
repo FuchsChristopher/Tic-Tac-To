@@ -82,9 +82,9 @@ function checkForWin() {
         checkForUndecided();
     }
 
-    /*if (winner) {
+    if (winner) {
         theWinner();
-    }*/
+    }
 }
 
 

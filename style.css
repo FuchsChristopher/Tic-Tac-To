@@ -186,6 +186,12 @@ table tr td:last-child {
     z-index: 1;
 }
 
+.spin-45deg4 {
+    transform: rotate(-52deg) scale(1);
+    transition: transform 225ms ease-in-out;
+    z-index: 1;
+}
+
 .makeVertical {
     transform: rotate(90deg) scale(0.0);
     transition: transform 225ms ease-in-out;
@@ -268,7 +274,68 @@ table tr td:last-child {
     position: relative;
 }
 
+
+@media(max-width:1025px) {
+    .undecidedText {
+        margin-top: -52px;
+    }
+}
+
+@media (max-width:913px) {
+    .undecidedImg {
+        object-fit: cover;
+        height: 40vh;
+    }
+    .reStart {
+        bottom: 280px;
+    }
+}
+
+@media (max-width:821px) {
+    .undecidedImg {
+        height: 44vh;
+        object-fit: cover;
+    }
+    .reStart {
+        bottom: 215px;
+    }
+}
+
+@media (max-width:769px) {
+    .undecidedImg {
+        height: 48vh;
+        object-fit: cover;
+    }
+    .reStart {
+        bottom: 175px;
+    }
+}
+
+@media (max-width:540px) {
+    .undecidedImg {
+        height: 59vh;
+        object-fit: cover;
+    }
+    .reStart {
+        bottom: 90px;
+    }
+}
+
 @media (max-width:415px) {
+    .undecidedImg {
+        height: 48vh;
+        object-fit: cover;
+    }
+    .gameOver {
+        object-fit: cover;
+        height: 35vh;
+    }
+
+    .reStart {
+        bottom: 178px;
+
+    }
+
     .horizontalLine8 {
         width: 418px;
         top: 312px;
@@ -377,6 +444,18 @@ table tr td:last-child {
 }
 
 @media (max-width:376px) {
+    .undecidedImg {
+        object-fit: cover;
+    }
+    .gameOver {
+        height: 34vh;
+        object-fit: cover;
+    }
+
+    .reStart {
+        bottom: 107px;
+    }
+
     .horizontalLine8 {
         width: 449px;
         top: 305px;
@@ -426,16 +505,96 @@ table tr td:last-child {
     }
 }
 
+@media (max-width:361px) {
+    .reStart {
+        bottom: 128px;
+    }
+
+    .gameOver {
+        height: 36vh;
+        object-fit: cover;
+    }
+}
+
 @media (max-width:281px) {
+    .undecidedText {
+        font-size: 45px;
+        margin-top: -46px;
+    }
+    .undecidedImg {
+        object-fit: cover;
+        height: 62vh;
+    }
+
+    .reStart {
+        bottom: 118px;
+        width: 271px;
+        height: 87px;
+    }
+
+    .gameOver {
+        height: 32vh;
+    }
+
     .mainDiv {
         width: 40vh;
     }
 
     .shape {
         width: 50px;
+        left: 19px;
     }
 
     .playerPanel {
         flex-direction: column;
     }
+
+    .horizontalLine1 {
+        width: 249px;
+        top: 213px;
+        left: 14px;
+    }
+
+    .horizontalLine2 {
+        width: 249px;
+        top: 353px;
+        left: 14px
+    }
+
+    .horizontalLine3 {
+        width: 249px;
+        top: 493px;
+        left: 14px;
+    }
+
+    .horizontalLine4 {
+        width: 390px;
+        top: 352px;
+        right: 22px;
+    }
+
+    .horizontalLine5 {
+        width: 390px;
+        top: 352px;
+        left: -62px;
+    }
+
+    .horizontalLine6 {
+        width: 390px;
+        top: 352px;
+        left: 27px;
+    }
+
+    .horizontalLine8 {
+        width: 359px;
+        top: 364px;
+        right: -54px;
+    }
+
+    .horizontalLine7 {
+        width: 359px;
+        top: 347px;
+        left: -47px;
+    }
+
 }
